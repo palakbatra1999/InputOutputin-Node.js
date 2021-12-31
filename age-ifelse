@@ -1,0 +1,9 @@
+//console.log("Palak Batra")
+//prompt("gimme your name?")
+var readlineSync = require('readline-sync');
+var myage = readlineSync.question('May I know your age? ');
+if(myage>25)
+{console.log('Welcome ,' + "yes are older than 25" + '!');}
+else {
+  console.log("okay !");
+}
