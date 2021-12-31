@@ -1,0 +1,26 @@
+//console.log("Palak Batra")
+//prompt("gimme your name?")
+var readlineSync = require('readline-sync');
+var question="Are you older than 25?";
+var ans="yes"
+var score=0;
+var ques = readlineSync.question(question);
+if(ques==ans)
+{
+score++;
+console.log( "Correct, you're score is :" +score );
+}
+else {
+  console.log("Wrong !. you're score is :" +score );
+}
+var question2="Do I love dogs?";
+var ans="yes";
+var ques = readlineSync.question(question2);
+if(ques==ans)
+{
+score++;
+console.log( "Correct, you're score is :" +score );
+}
+else {
+  console.log("Wrong !. you're score is :" +score );
+}
