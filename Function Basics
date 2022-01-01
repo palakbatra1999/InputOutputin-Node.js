@@ -1,0 +1,22 @@
+//console.log("Palak Batra")
+//prompt("gimme your name?")
+var readlineSync = require('readline-sync');
+var score=0;
+function play(question, answer){
+  var ans=readlineSync.question(question);
+  if(ans==answer)
+ {
+   console.log("Yes, you were right!");
+ score++;
+ }
+ else 
+ {
+   console.log("No, you are wrong!");
+   }
+
+   console.log("You're score is : "+score);
+
+}
+
+play("What's my name?  ","Palak");
+play("Where do I work?  ","Fidelity");
