@@ -1,0 +1,49 @@
+//console.log("Palak Batra")
+//prompt("gimme your name?")
+var readlineSync = require('readline-sync');
+//welcome
+var score=0;
+function welcome(){
+  var username=readlineSync.question("What's your name?");
+ 
+ console.log("Hey "+ username +",Let's Play a game");
+console.log("--------------------")
+}
+ //play
+
+ function play(question, answer)
+ {
+   var userans=readlineSync.question(question);
+
+   if(userans==answer)
+  { console.log("Correct, Bravo");
+  score++;}
+  else { console.log("Wrong, Oops");
+  }
+   console.log("Current score : "+score);
+   console.log("--------------------")
+ 
+ }
+
+
+
+var queslist=
+[{
+      ques: "Where do you live?",ans:"karnal"},
+     {ques: "What's your fav food?",ans:"Pizza"},
+      {ques: "What's your fav movie?",ans:"Aquaman"},
+       {ques: "Where do you work?",ans:"Fidelity"},
+        {ques: "Who is your bestfriend?",ans:"Sarthak"}
+];
+
+welcome(); 
+
+for(var i=0;i<queslist.length;i++)
+{
+  play(queslist[i].ques,queslist[i].ans);
+}
+
+ console.log("--------------------");
+ if(score>=3)
+ {console.log("Yay you scored well !  Score :"+ score );}
+ else {console.log("Oops, Hang out with Palak more to know her more ! , Score  : " +score)};
