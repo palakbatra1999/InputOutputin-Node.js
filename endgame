@@ -15,7 +15,7 @@ console.log("--------------------")
  {
    var userans=readlineSync.question(question);
 
-   if(userans==answer)
+   if(userans.toUpperCase()==answer.toUpperCase())
   { console.log("Correct, Bravo");
   score++;}
   else { console.log("Wrong, Oops");
